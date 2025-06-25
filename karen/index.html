@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandhana's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 200px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        button:nth-child(1) {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+            color: white;
+        }
+        
+        button:nth-child(2) {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+        }
+        
+        button:nth-child(3) {
+            background: linear-gradient(45deg, #45b7d1, #96c93d);
+            color: white;
+        }
+        
+        button:nth-child(4) {
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            color: white;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        button:active {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="name" >I'm ----</h1>
+        <div class="button-container">
+            <button onclick="handleClick('Nandhana')">Nandhana</button>
+            <button onclick="handleClick('Navya')">Name2</button>
+            <button onclick="handleClick('Karen')">Name3</button>
+            <button onclick="handleClick('Anna')">Name4</button>
+        </div>
+    </div>
+
+    <script>
+        function handleClick(name) {
+            if(name==="Nandhana") {
+
+                document.getElementById("name").innerText = "I'm Nandhana";
+
+            } else if(name==="Navya") {
+
+                document.getElementById("name").innerText = "I'm Name2";
+
+            } else if(name==="Karen") {
+
+                document.getElementById("name").innerText = "I'm Name3";
+
+            } else if(name==="Anna") {
+
+                document.getElementById("name").innerText = "I'm Name4";
+
+            }
+        }
+    </script>
+</body>
+</html>
